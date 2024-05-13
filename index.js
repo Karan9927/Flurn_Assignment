@@ -5,19 +5,15 @@ const seatsRouter = require("./routes/seat.route");
 const bookingRouter = require("./routes/booking.route");
 
 require("dotenv").config();
-console.log(process.env);
 
 const app = express();
 
 // Connect to MongoDB
 mongoose
-  .connect(
-    "mongodb+srv://karan7417:karan8630@flurnassignment.oojbetb.mongodb.net/?retryWrites=true&w=majority&appName=flurnAssignment",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Connected to MongoDB");
   })
