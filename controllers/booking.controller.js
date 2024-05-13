@@ -97,7 +97,7 @@ async function createBooking(req, res) {
     const { data, error } = await resend.emails.send({
       from: "contact@nitinp.dev",
       to: email,
-      subject: "Booking COnfirmation",
+      subject: "Booking Confirmation",
       html: `<p>${message}</p>`,
     });
 
