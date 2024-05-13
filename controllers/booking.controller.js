@@ -108,7 +108,7 @@ async function createBooking(req, res) {
     res.status(201).json({
       bookingId: bookingId,
       totalPrice: totalPrice.toFixed(0),
-      message: "Booking created successfully. SMS notification sent.",
+      message: "Booking created successfully. Email notification sent.",
     });
   } catch (error) {
     console.error("Error creating booking:", error);
