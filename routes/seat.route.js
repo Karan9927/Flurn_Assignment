@@ -4,6 +4,6 @@ const seatController = require("../controllers/seat.controller");
 
 router.get("/seats", seatController.getSeats);
 
-router.get("/seat/:id", seatController.getSeatById);
+router.get("/seats/:id", seatController.getSeatById);
 
 module.exports = router;
