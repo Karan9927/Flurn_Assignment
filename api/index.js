@@ -1,8 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const seatsRouter = require("./routes/seat.route");
-const bookingRouter = require("./routes/booking.route");
+const seatsRouter = require("../routes/seat.route");
+const bookingRouter = require("../routes/booking.route");
 
 require("dotenv").config();
 
