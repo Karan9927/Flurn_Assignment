@@ -1,0 +1,26 @@
+{
+  "name": "flurn_assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.3.4",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0",
+    "randomatic": "^3.1.1",
+    "resend": "^3.2.0"
+  }
+}
